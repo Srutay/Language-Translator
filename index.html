@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LANGUAGE TRANSLATOR</title>
+  <!-- FONT AWESOME ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="text-input">
+        <textarea placeholder="Enter text" class="from-text"></textarea>
+        <textarea placeholder="Translated" class="to-text" readonly disabled></textarea>
+      </div>
+      <ul class="controls">
+        <li class="row-from">
+          <select>
+            <option value="en-GB">English</option>
+            <option value="hi-IN">Hindi</option>
+          </select>
+       </li>
+       <li class="exchange"><i class="fa-solid fa-right-left fa-xl" style="color: azure;"></i></li>
+          <li class="row-to">
+            <select>
+              <option value="en-GB">English</option>
+              <option value="hi-IN">Hindi</option>
+            </select>
+          </li>
+      </ul>
+    </div>
+    <button class="trns">Translate Text</button>
+    <button class="rel">Try Again</button>
+  </div>
+  <script src="countries.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
